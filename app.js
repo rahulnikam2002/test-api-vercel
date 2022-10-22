@@ -24,10 +24,7 @@ app.get("/profile", async (req, res) => {
     userEmail: userEmail,
   });
   console.log(model);
-  res.json({
-    login: true,
-    username: "Rahul Nikam",
-  });
+  res.json(model);
 });
 
 app.listen(port, () => {
