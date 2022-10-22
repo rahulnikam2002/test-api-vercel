@@ -7,6 +7,13 @@ app.get("/", (req,res) => {
     res.send("Express on Vercel");
 });
 
+app.get("/profile", (req,res) => {
+    res.json({
+        login: true,
+        username: "Rahul Nikam"
+    });
+});
+
 app.listen(port, () => {
     console.log("Running on port 5000")
 });
